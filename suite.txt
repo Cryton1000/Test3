@@ -1,0 +1,14 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Test Cases ***
+HelloWorold
+    Open Browser    Https://autoone.a8.loc    firefox
+    Login    AutoTestTeacher    123
+
+*** Keywords ***
+Login
+    [Arguments]    ${Username}    ${password}
+    Input Text    css=[id$='Username_input']    ${username}
+    Input Password    css=[id$='Password_input']    ${password}
+    Click Button    css=[id$='nativeLoginButton']
