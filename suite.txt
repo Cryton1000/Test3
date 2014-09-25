@@ -1,9 +1,13 @@
 *** Settings ***
 Library           Selenium2Library
 
+*** Variables ***
+${BROWSER}		Chrome
+${URL}			Https://autoone.a8.loc
+
 *** Test Cases ***
 HelloWorold
-    Open Browser    Https://autoone.a8.loc    chrome
+    Open Browser    ${URL}    ${BROWSER}
     Login    AutoTestTeacher    123
 
 *** Keywords ***
