@@ -3,7 +3,7 @@ Library           Selenium2Library
 
 *** Test Cases ***
 HelloWorold
-    Open Browser    Https://autoone.a8.loc    firefox
+    Open Browser    Https://autoone.a8.loc    chrome
     Login    AutoTestTeacher    123
 
 *** Keywords ***
