@@ -1,13 +1,14 @@
 *** Settings ***
 Library           Selenium2Library
+Suite Setup		  Open Browser    ${URL}    ${BROWSER}
+Suite Teardown	  Close All Browsers
 
 *** Variables ***
 ${BROWSER}		Chrome
 ${URL}			Https://autoone.a8.loc
 
 *** Test Cases ***
-HelloWorold
-    Open Browser    ${URL}    ${BROWSER}
+HelloWorld
     Login    AutoTestTeacher    123
 
 *** Keywords ***
