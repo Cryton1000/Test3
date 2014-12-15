@@ -4,12 +4,13 @@ Suite Setup		  Open Browser    ${URL}    ${BROWSER}
 Suite Teardown	  Close Browser
 
 *** Variables ***
-${BROWSER}		Chrome
-${URL}			Https://autoone.a8.loc
+${BROWSER} 	Chrome
+${URL} 	Https://autoone.a8.loc
 
 *** Test Cases ***
 HelloWorld
     Login    AutoTestTeacher    1234
+
 
 *** Keywords ***
 Login
@@ -17,3 +18,4 @@ Login
     Input Text    css=[id$='Username_input']    ${username}
     Input Password    css=[id$='Password_input']    ${password}
     Click Button    css=[id$='nativeLoginButton']
+    Page Should Contain   	AutoTest, AutotestTeacher
