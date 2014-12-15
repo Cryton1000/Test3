@@ -9,7 +9,7 @@ ${URL}			Https://autoone.a8.loc
 
 *** Test Cases ***
 HelloWorld
-    Login    AutoTestTeacher    123
+    Login    AutoTestTeacher    1234
 
 *** Keywords ***
 Login
